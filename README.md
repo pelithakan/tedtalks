@@ -102,8 +102,26 @@ You can access the following CRUD APIs using `curl` commands:
    ```
 
   Replace `{id}` with the TED Talk ID you want to delete.
+---
 
-### 6. Database Configuration
+### 6. Influence Analysis
+
+- **Get Top Influential Speakers** (paginated):
+   ```bash
+   curl -X GET "http://localhost:8080/api/ted-talks/analyse/top-influential-speakers?page=0&size=10"
+   ```
+
+  This returns the most influential speakers ranked by a calculated influence score.
+
+- **Get Top Speaker Per Year**:
+   ```bash
+   curl -X GET "http://localhost:8080/api/ted-talks/analyse/top-speaker-per-year"
+   ```
+
+  This returns the most influential speaker for each year based on views and likes.
+
+---
+### 7. Database Configuration
 The application uses PostgreSQL for data storage. The database is configured in the `docker-compose.yml` file. By default, it will use the following credentials:
 - **Database Name**: `tedtalkdb`
 - **Username**: `user`
