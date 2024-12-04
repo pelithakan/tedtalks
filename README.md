@@ -120,6 +120,11 @@ You can access the following CRUD APIs using `curl` commands:
 
   This returns the most influential speaker for each year based on views and likes.
 
+Note: The influence analysis calculates scores for TED Talk speakers based on:
+
+• 70% weight for views
+
+• 30% weight for likes
 ---
 ### 7. Database Configuration
 The application uses PostgreSQL for data storage. The database is configured in the `docker-compose.yml` file. By default, it will use the following credentials:
