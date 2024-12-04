@@ -1,0 +1,39 @@
+# Gradle
+.gradle/
+build/
+
+# Kotlin
+*.kotlin_module
+*.kotlin_metadata
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Test output
+/test-outputs/
+*.test
+
+# Spring Boot specific
+spring-boot-devtools.jar
+
+# Dependency directories
+/.mvn/
+target/
+
+# JARs, WARs, and other build outputs
+*.jar
+*.war
+*.ear

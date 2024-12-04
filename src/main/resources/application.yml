@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tedtalkdb
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update  # You can change this to 'none' or 'validate' in production
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update  # Configure based on your needs
+  data:
+    web:
+      enabled: false  # Optional, if you're not using Spring Data REST
+logging:
+  level:
+    org.hibernate.SQL: DEBUG  # Logs the SQL queries
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # Logs the bound parameter values

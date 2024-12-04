@@ -1,0 +1,23 @@
+services:
+  db:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tedtalkdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - my-network
+    restart: always
+
+networks:
+  my-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+    driver: local
