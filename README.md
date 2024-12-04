@@ -6,6 +6,7 @@ This is a Spring Boot application for managing TED Talks. It provides APIs for C
 ## Features
 - **Import Data**: Import TED Talk data from a `data.csv` file.
 - **CRUD Operations**: Perform CRUD (Create, Read, Update, Delete) operations on TED Talks.
+- **Influence Analysis**: Analyze and retrieve data about the most influential speakers.
 - **Dockerized**: Easily run the application with Docker and Docker Compose.
 
 ## Requirements
